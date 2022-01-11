@@ -5,7 +5,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // Components
 import Header from "./components/Header";
-import First from "./components/Endpoints/First";
 import Home from "./components/Home";
 import Login from "./components/Login";
 import SideBar from "./components/SideBar";
@@ -62,10 +61,11 @@ function App() {
             />
           }
         />
-        <Route path="/first" element={<First title={"First"} />} />
+        <Route path="/all" element={<UserEndPoint />} />
         <Route path="/users" element={<UserEndPoint />} />
-        <Route path="/fourth" element={<First title={"Fourth"} />} />
-        <Route path="/fifth" element={<First title={"Fifth"} />} />
+        <Route path="/third" element={<UserEndPoint />} />
+        <Route path="/fourth" element={<UserEndPoint />} />
+        <Route path="/fifth" element={<UserEndPoint />} />
       </Routes>
       <GlobalStyle />
     </Router>
